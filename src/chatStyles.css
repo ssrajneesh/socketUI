@@ -1,0 +1,65 @@
+/* chatStyles.css */
+.chat-container {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Keep the message input container at the bottom */
+  }
+  
+  .message-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .send-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .send-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Style sent messages to align right */
+  .sent {
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+    background-color: #417885;
+  }
+  
+  /* Style received messages to align left */
+  .received {
+    display: flex;
+    padding: 10px;
+    justify-content: flex-start;
+    background-color: #4a707d;
+  }
+  
+  /* Style the message boxes to adjust to message length */
+  .sent .message, .received .message {
+    /* background-color:#3b8582; Light olive green background */
+    padding: 10px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    max-width: 100%; /* Adjust the width based on the message length */
+  }
+  
