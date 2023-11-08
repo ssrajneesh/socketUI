@@ -6,7 +6,9 @@ const MessageList = ({ messages }) => {
     <ul>
       {messages.map((message, index) => (
         <li key={index} className={message.type}>
-          {message.text}
+          <div className="message-container">
+            {message.text}
+          </div>
         </li>
       ))}
     </ul>

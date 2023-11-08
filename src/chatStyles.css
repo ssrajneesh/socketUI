@@ -1,7 +1,7 @@
 /* chatStyles.css */
 .chat-container {
     width: 400px;
-    height: 400px;
+    height: 700px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -43,7 +43,7 @@
     display: flex;
     padding: 10px;
     justify-content: flex-end;
-    background-color: #417885;
+    /* background-color: #417885; */
   }
   
   /* Style received messages to align left */
@@ -51,7 +51,7 @@
     display: flex;
     padding: 10px;
     justify-content: flex-start;
-    background-color: #4a707d;
+    /* background-color: #4a707d; */
   }
   
   /* Style the message boxes to adjust to message length */
@@ -63,3 +63,14 @@
     max-width: 100%; /* Adjust the width based on the message length */
   }
   
+
+  .message-container {
+    background-color: #3b8582; /* Light olive green background */
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block; /* Takes space of the text only */
+  }
+
+  ul {
+    padding: 0;
+  }
